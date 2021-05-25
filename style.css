@@ -1,10 +1,14 @@
-/* Fjerner default padding og margin.*/
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+/* Fjerner default padding/margin og indsætter font */
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Ultra', serif;
 }
 
-/* Opsættelse af farver til brug igennem side.*/
+/* Indsætter farve variabler */
 :root{
     --kasser: #fcfcfc;
     --skrift: #303030;
@@ -22,4 +26,24 @@ body{
 .forside-slideshow{
     background-color: var(--baggrund);
     padding: 150px;
+}
+
+.forside-ikoner{
+    background-color: var(--baggrund);
+    display: flex;
+}
+
+.forside-ikon-container{
+    margin-left: 10%;
+}
+
+.forside-ikon{
+    width: 30px;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    color: var(--body)
 }
