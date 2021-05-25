@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 
+/* Fjerner default padding/margin og indsætter font */
 *{
     padding: 0;
     margin: 0;
     font-family: 'Ultra', serif;
 }
 
+/* Indsætter farve variabler */
 :root{
     --kasser: #fcfcfc;
     --skrift: #303030;
