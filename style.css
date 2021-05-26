@@ -8,6 +8,10 @@
     font-family: 'Ultra', serif;
 }
 
+p{
+    font-family: 'Lato', sans-serif;
+}
+
 /* Indsætter farve variabler */
 :root{
     --kasser: #fcfcfc;
@@ -28,22 +32,21 @@ body{
     padding: 150px;
 }
 
-.forside-ikoner{
+.forside-tilbyder{
     background-color: var(--baggrund);
     display: flex;
 }
 
-.forside-ikon-container{
-    margin-left: 10%;
+.forside-tilbyder__container{
+    margin-left: 5%;
 }
 
-.forside-ikon{
-    width: 30px;
+.forside-tilbyder__ikon{
+    width: 15px;
 }
 
-p{
-    text-align: center;
-    font-size: 15px;
-    font-family: 'Lato', sans-serif;
-    color: var(--body)
+.forside-tilbyder__text{
+    font-size: 12px;
+    color: var(--body);
+    margin-left: -5px;
 }
