@@ -5,12 +5,10 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'Ultra', serif;
-}
+    font-family: 'Ultra', serif;}
 
 p{
-    font-family: 'Lato', sans-serif;
-}
+    font-family: 'Lato', sans-serif;}
 
 /* Indsætter farve variabler */
 :root{
@@ -18,7 +16,8 @@ p{
     --skrift: #303030;
     --knap: #cd9c43;
     --baggrund: #326537;
-    --body: #efefe3;
+
+   --body: #efefe3;
 }
 
 /* Ændre farve af body på alle sider.*/
@@ -49,4 +48,7 @@ body{
     font-size: 12px;
     color: var(--body);
     margin-left: -5px;
+}
+=======
+    --body: #efefe3;    
 }
