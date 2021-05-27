@@ -50,3 +50,102 @@ body{
     margin-left: -5px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*styling af footer*/
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: var(--body);
+}
+
+.footer-kontakt {
+    margin-bottom: 0.6em;
+}
+
+.footer-find {
+    margin-bottom: 0.6em;
+}
+
+.footer-copy {
+    text-align: center;
+}
