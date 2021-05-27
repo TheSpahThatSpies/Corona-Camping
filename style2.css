@@ -172,3 +172,12 @@ body{
 .nav-brodtekst {
     
 }
+
+.Burger-logo {
+    background-color: var(--baggrund);
+}
+
+.Burger-logo img {
+    width: 200px;
+    height: auto;
+}
