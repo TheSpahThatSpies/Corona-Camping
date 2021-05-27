@@ -1,0 +1,141 @@
+/* Fjerner default padding/margin og indsætter font */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Ultra', serif;}
+
+p{
+    font-family: 'Lato', sans-serif;}
+
+/* Indsætter farve variabler */
+:root{
+    --kasser: #fcfcfc;
+    --skrift: #303030;
+    --knap: #cd9c43;
+    --baggrund: #326537;
+
+   --body: #efefe3;
+}
+
+/* Ændre farve af body på alle sider.*/
+body{
+    background-color: var(--body);
+}
+
+
+/* Navigation og burgermenu*/
+
+.header {
+    background-color: var(--baggrund);
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+    position: relative
+}
+
+.header ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    
+}
+
+.header ul a {
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    font-family: var(--h-text);
+    font-style: normal;
+    font-weight: 100;
+    text-align: center;
+    font-size: 20px;
+    background: var(--body);
+    color: var(--text-color);
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.header .menu-content {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* Burgermenu ikon*/
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+/*Child til Label - midterste bar til burgermenu*/
+
+.header .menu-icon .nav-icon {
+    background: var(--body);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+/* top og bund bar til burgermenu -pseudoelementer*/
+
+.header .menu-icon .nav-icon:before {
+    background: var(--body);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px
+}
+
+.header .menu-icon .nav-icon:after {
+    background: var(--body);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+
+/* X-transition - luk-effekt på burgermenu */
+
+.header .menu-btn:checked~.menu-content {
+    max-height: 600px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.nav-info-boks {
+    background-color: var(--baggrund);
+}
