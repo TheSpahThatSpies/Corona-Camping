@@ -25,11 +25,6 @@ body{
     background-color: var(--body);
 }
 
-h1{
-    font-weight: lighter;
-    font-size: 16px;
-}
-
 /*--------------------Forside--------------------*/
 .forside-slideshow{
     background-color: var(--baggrund);
@@ -42,11 +37,11 @@ h1{
 }
 
 .forside-tilbyder__container{
-    margin-left: 6%;
+    margin-left: 10%;
 }
 
 .forside-tilbyder__ikon{
-    width: 20px;
+    width: 30px;
 }
 
 .forside-tilbyder__text{
@@ -61,16 +56,18 @@ h1{
 }
 
 .forside-h1{
+    font-weight: lighter;
+    font-size: 25px;
     margin-left: 10px;
 }
 
 .forside-p{
-    font-size: 12px;
+    font-size: 17px;
     margin-left: 7px;
 }
 
 .forside-stibillede{
     margin-top: 5px;
     margin-left: 5px;
-    width: 100px;
+    width: 170px;
 }
