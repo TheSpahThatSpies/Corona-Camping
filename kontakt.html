@@ -36,7 +36,26 @@
         </div>
     </section>
 
-    <!--Kontaktformular-->
+    <!--Kontaktformular, inspiration er hentet fra W3schools https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form -->
     <section class="kontakt__formular">
+        <h1>Kontaktformular</h1>
+
+        <div class="kontakt__formular--container">
+            <form action="/action_page.php">
+                <label for="fnavn"></label>
+                <input type="text" id="fnavn" name="ditnavn" placeholder="Dit navn:">
+
+                <label for="email"></label>
+                <input type="email" id="email" name="dinemail" placeholder="Din E-mail:">
+
+                <label for="besked"></label>
+                <textarea id="besked" name="dinbesked" placeholder="Din Besked:" cols="30" rows="10"></textarea>
+
+                <button type="submit">Indsend</button>
+            </form>
+
+        </div>
+
+        
         
     </section>

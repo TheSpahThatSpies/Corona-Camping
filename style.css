@@ -135,3 +135,20 @@ body{
     text-decoration: none;
     margin-left: 10px;
 }
+
+
+/*Kontakformular opbygget efter w3schools*/
+
+.kontakt__formular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.kontakt__formular--container {
+    align-items: center;
+    justify-content: center;
+
+}
