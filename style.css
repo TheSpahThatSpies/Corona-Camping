@@ -27,10 +27,7 @@ button {
     width: 8em;
     height: 2em;
     color: var(--body);
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.09);
--webkit-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.09);
--moz-box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.09);
-
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 
@@ -123,14 +120,193 @@ body{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Kontaktside*/
 
 .titel__kontaktos{
-    background-color: #326537;
+    background-color: var(--baggrund);
     min-width: 100%;
     height: 100px;
     text-align: center;
-    color: #efefe3;
+    color: var(--body);
 }
 
 .ejere__img {
@@ -142,10 +318,10 @@ body{
 
 
 .card__kontakt {
-    background-color: #326537;
+    background-color: var(--baggrund);
     width: 85%;
     height: 200px;
-    color: #efefe3;
+    color: var(--body);
     margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
