@@ -181,3 +181,11 @@ body{
     width: 200px;
     height: auto;
 }
+
+
+/* billede til siden */
+
+.side__billede {
+    width: 100%;
+    
+}
