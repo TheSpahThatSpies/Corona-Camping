@@ -47,30 +47,6 @@ body{
     background-color: var(--body);
 }
 
-/*--------------------Forside--------------------*/
-.forside-slideshow{
-    background-color: var(--baggrund);
-    padding: 150px;
-}
-
-.forside-tilbyder{
-    background-color: var(--baggrund);
-    display: flex;
-}
-
-.forside-tilbyder__container{
-    margin-left: 5%;
-}
-
-.forside-tilbyder__ikon{
-    width: 15px;
-}
-
-.forside-tilbyder__text{
-    font-size: 12px;
-    color: var(--body);
-    margin-left: -5px;
-}
 
 
 
