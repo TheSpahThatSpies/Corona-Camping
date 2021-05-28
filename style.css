@@ -46,6 +46,212 @@ body{
     background-color: var(--body);
 }
 
+/* Navigation og burgermenu*/
+
+.header {
+    background-color: var(--baggrund);
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+    position: relative
+}
+
+.header ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0; 
+}
+
+.header ul a {
+    display: block;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    background: var(--baggrund);
+    color: var(--body);
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.header .menu-content {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* header logo */
+.header__logo {
+   margin-top: 5px;
+   width: 100px;
+}
+
+/* Burgermenu ikon*/
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+/*Child til Label - midterste bar til burgermenu*/
+
+.header .menu-icon .nav-icon {
+    background: var(--body);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+/* top og bund bar til burgermenu -pseudoelementer*/
+
+.header .menu-icon .nav-icon:before {
+    background: var(--body);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px
+}
+
+.header .menu-icon .nav-icon:after {
+    background: var(--body);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+/* styling af menu overskrift */
+
+.menu__content--overskrift--container {
+    width: 100%;
+    background-color: var(--baggrund);
+    width: 100%;
+    height: 60px;
+    
+}
+
+.menu__content--overskrift {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--baggrund);    
+    }
+
+.menu__content--streg {
+    
+    width: 20%;
+    height: 2px;
+    background-color: var(--body);
+    border-style: none;
+}
+
+
+/* styling af underlinks */
+.menu__content--brodtekst {
+    display: block;
+    padding-top: 5px;
+    padding-left: 60px;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif; ;
+    background: var(--baggrund);
+    color: var(--body);
+}
+
+/* X-transition - luk-effekt på burgermenu */
+
+.header .menu-btn:checked~.menu-content {
+    max-height: 800px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* styling af side info/overskrift áf siden */
+
+.nav-info-boks {
+    background-color: var(--baggrund);
+}
+
+.nav-info-boks {
+    text-align: center;
+}
+
+.nav-overskrift {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -1px;
+}
+
+.nav-linje {
+    width: 20%;
+    height: 2px;
+    background-color: var(--body);
+    border-style: none;
+}
+
+.nav-overskrift h1 {
+    color: var(--body);
+}
+
+.nav-brodtekst p {
+    color: var(--body);
+    padding-bottom: 20px;
+}
+
+.Burger-logo {
+    background-color: var(--baggrund);
+}
+
+.Burger-logo img {
+    width: 200px;
+    height: auto;
+}
+
+.Burger-logo {
+    text-align: center;
+}
+
+/* billede til siden prisliste */
+
+.side__billede img{
+    max-width: 100%;   
+}
+
 
 
 
