@@ -509,7 +509,7 @@ body{
 }
 
 
-.kontaktinformationer__liste, li {
+.kontaktinformationer__liste li {
     font-family: 'Lato', sans-serif;
     padding: 4px;
     list-style: none;
