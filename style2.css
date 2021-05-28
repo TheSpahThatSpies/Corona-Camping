@@ -22,7 +22,6 @@ body{
     background-color: var(--body);
 }
 
-
 /* Navigation og burgermenu*/
 
 .header {
@@ -36,8 +35,7 @@ body{
 .header ul {
     list-style: none;
     overflow: hidden;
-    padding: 0;
-    
+    padding: 0; 
 }
 
 .header ul a {
@@ -48,7 +46,6 @@ body{
     font-size: 20px;
     background: var(--baggrund);
     color: var(--body);
-
 }
 
 .header .logo {
@@ -62,6 +59,12 @@ body{
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+}
+
+/* header logo */
+.header__logo {
+   margin-top: 5px;
+   width: 100px;
 }
 
 /* Burgermenu ikon*/
