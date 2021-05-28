@@ -87,19 +87,14 @@ body{
     width: 170px;
 }
 
-.knap{
-    background-color: var(--knap);
-    border-radius: 5px;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: var(--skrift);
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-}
-
 .forside-knap{
     margin-top: 20px;
-    margin-left: 60px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.forside-knap__link{
+    text-decoration: none;
+    color: var(--body);
+    font-family: 'Lato', sans-serif;
 }
