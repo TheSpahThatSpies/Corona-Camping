@@ -44,11 +44,6 @@ body{
 }
 
 /*--------------------Forside--------------------*/
-.forside-slideshow{
-    background-color: var(--baggrund);
-    padding: 110px;
-}
-
 .forside-tilbyder{
     background-color: var(--baggrund);
     display: flex;
@@ -97,4 +92,80 @@ body{
     text-decoration: none;
     color: var(--body);
     font-family: 'Lato', sans-serif;
+}
+
+* {box-sizing:border-box}
+
+.forside-slideshow {
+  background-color: var(--baggrund);
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.forside-slideshow__slide {
+  display: none;
+}
+
+/* Next & previous buttons */
+.forside-slideshow__previous, .forside-slideshow__next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--body);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.forside-slideshow__next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.forside-slideshow__previous:hover, .forside-slideshow__next:hover {
+  background-color: var(--baggrund);
+  opacity: 80%;
+}
+
+/* Caption text */
+.forside-slideshow__tekst {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.forside-slideshow__img{
+    width: 375px;
+    height: 240px;
+}
+
+/* Fading animation */
+.forside-slideshow__fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
