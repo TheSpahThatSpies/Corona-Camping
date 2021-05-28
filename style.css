@@ -7,7 +7,7 @@
     margin: 0;
     font-family: 'Ultra', serif;
 }
-
+  
 h1 {
     font-size: 22px;
     letter-spacing: 3px;
@@ -16,17 +16,21 @@ h1 {
 
 p{
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
-button{
+button {
     background-color: var(--knap);
+    border: none;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
     width: 8em;
     height: 2em;
     color: var(--body);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+
+
 
 /* Indsætter farve variabler */
 :root{
@@ -37,7 +41,6 @@ button{
 
    --body: #efefe3;
 }
-
 /* Ændre farve af body på alle sider.*/
 body{
     background-color: var(--body);
