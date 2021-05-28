@@ -378,10 +378,17 @@ body{
 
 /* Om Corona Camping */ 
 
+.cc-campingvogn-image{
+    width: 100vw;
+}
 
+.cc-natur-image{
+    width: 100vw;
+}
 
-
-
+.p-om-os{
+    margin: 20px;
+}
 
 
 
