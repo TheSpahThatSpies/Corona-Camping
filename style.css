@@ -12,6 +12,7 @@ h1 {
     font-size: 22px;
     letter-spacing: 3px;
     font-weight: 100;
+    font-family: 'Ultra', serif;
 }
 
 p{
@@ -154,7 +155,8 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--baggrund);    
+    background-color: var(--baggrund);
+    color: var(--body);    
     }
 
 .menu__content--streg {
@@ -248,12 +250,24 @@ body{
 
 /* billede til siden prisliste */
 
+.side__billede {
+    background-color: var(--body);
+}
+
 .side__billede img{
     max-width: 100%;   
 }
 
+/* prisliste styling */
 
+.prisliste {
+    background-color: #fcfcfc;
+    width: 85%;
+}
 
+.prisliste__overskrift {
+    background-color: #fcfcfc;
+}
 
 
 
