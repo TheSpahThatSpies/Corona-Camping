@@ -27,10 +27,7 @@ button {
     width: 8em;
     height: 2em;
     color: var(--body);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
--webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
--moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.09);
-
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 
@@ -44,36 +41,396 @@ button {
 
    --body: #efefe3;
 }
-
 /* Ændre farve af body på alle sider.*/
 body{
     background-color: var(--body);
 }
 
-/*--------------------Forside--------------------*/
-.forside-slideshow{
+/* Navigation og burgermenu*/
+
+.header {
     background-color: var(--baggrund);
-    padding: 150px;
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+    position: relative
 }
 
-.forside-tilbyder{
-    background-color: var(--baggrund);
-    display: flex;
+.header ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0; 
 }
 
-.forside-tilbyder__container{
-    margin-left: 5%;
-}
-
-.forside-tilbyder__ikon{
-    width: 15px;
-}
-
-.forside-tilbyder__text{
-    font-size: 12px;
+.header ul a {
+    display: block;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    background: var(--baggrund);
     color: var(--body);
-    margin-left: -5px;
 }
+
+.header .logo {
+    float: left;
+    display: block;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.header .menu-content {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* header logo */
+.header__logo {
+   margin-top: 5px;
+   width: 100px;
+}
+
+/* Burgermenu ikon*/
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+/*Child til Label - midterste bar til burgermenu*/
+
+.header .menu-icon .nav-icon {
+    background: var(--body);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+/* top og bund bar til burgermenu -pseudoelementer*/
+
+.header .menu-icon .nav-icon:before {
+    background: var(--body);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px
+}
+
+.header .menu-icon .nav-icon:after {
+    background: var(--body);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+/* styling af menu overskrift */
+
+.menu__content--overskrift--container {
+    width: 100%;
+    background-color: var(--baggrund);
+    width: 100%;
+    height: 60px;
+    
+}
+
+.menu__content--overskrift {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--baggrund);    
+    }
+
+.menu__content--streg {
+    
+    width: 20%;
+    height: 2px;
+    background-color: var(--body);
+    border-style: none;
+}
+
+
+/* styling af underlinks */
+.menu__content--brodtekst {
+    display: block;
+    padding-top: 5px;
+    padding-left: 60px;
+    text-decoration: none;
+    font-size: 10px;
+    font-family: 'Lato', sans-serif; ;
+    background: var(--baggrund);
+    color: var(--body);
+}
+
+/* X-transition - luk-effekt på burgermenu */
+
+.header .menu-btn:checked~.menu-content {
+    max-height: 800px;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* styling af side info/overskrift áf siden */
+
+.nav-info-boks {
+    background-color: var(--baggrund);
+}
+
+.nav-info-boks {
+    text-align: center;
+}
+
+.nav-overskrift {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -1px;
+}
+
+.nav-linje {
+    width: 20%;
+    height: 2px;
+    background-color: var(--body);
+    border-style: none;
+}
+
+.nav-overskrift h1 {
+    color: var(--body);
+}
+
+.nav-brodtekst p {
+    color: var(--body);
+    padding-bottom: 20px;
+}
+
+.Burger-logo {
+    background-color: var(--baggrund);
+}
+
+.Burger-logo img {
+    width: 200px;
+    height: auto;
+}
+
+.Burger-logo {
+    text-align: center;
+}
+
+/* billede til siden prisliste */
+
+.side__billede img{
+    max-width: 100%;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -126,11 +483,11 @@ body{
 /*Kontaktside*/
 
 .titel__kontaktos{
-    background-color: #326537;
+    background-color: var(--baggrund);
     min-width: 100%;
     height: 100px;
     text-align: center;
-    color: #efefe3;
+    color: var(--body);
 }
 
 .ejere__img {
@@ -142,10 +499,10 @@ body{
 
 
 .card__kontakt {
-    background-color: #326537;
+    background-color: var(--baggrund);
     width: 85%;
     height: 200px;
-    color: #efefe3;
+    color: var(--body);
     margin-top: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -161,7 +518,26 @@ body{
 }
 
 
-/*Kontakformular opbygget efter w3schools*/
+/*Kontakformular opbygget efter w3schools (se link i HTML)*/
+
+.card__kontakt--overskrift {
+    text-align: center;
+    padding-top: 0.6em;
+}
+
+.kontakt__formular--overskrift {
+    color: var(--skrift);
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+}
+
+.kontakt__formular--brodtekst {
+    color: var(--skrift);
+    padding-bottom: 0.5em;
+    margin-left: 2.4em;
+    margin-right: 2.4em;
+}
+
 
 .kontakt__formular {
     display: flex;
@@ -171,25 +547,46 @@ body{
 
 }
 
+.form {
+    text-align: center;
+}
+
 .kontakt__formular--container {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     font-family: 'Lato', sans-serif;
+    background-color: var(--kasser);
+    padding: 20px;
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
+
 
 .kontakt__formular--container input, textarea {
     font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    resize: none;
 }
 
-.card__kontakt--overskrift {
-    text-align: center;
-    padding-top: 0.6em;
-}
-.kontakt__formular--overskrift {
+#fnavn, #besked, #email {
     color: var(--skrift);
-    padding-top: 2em;
-    padding-bottom: 0.5em;
+    background-color: var(--kasser);
+    padding-left: 10px;
 }
+
 
 .kontakt__formular--brodtekst {
     color: var(--skrift);
@@ -389,30 +786,3 @@ body{
 .p-om-os{
     margin: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
