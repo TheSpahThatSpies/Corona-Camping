@@ -261,15 +261,27 @@ body{
 /* prisliste styling */
 
 .prisliste {
-    background-color: #fcfcfc;
+    background-color: var(--body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+.prisliste__container {
+    background-color: #FCFCFC ;
     width: 85%;
+    
 }
 
-.prisliste__overskrift {
-    background-color: #fcfcfc;
+.prisliste__container--overskrift {
+    margin-bottom: 12px;
 }
 
-
+.prisliste__teltcamp--priser {
+    display: flex;
+    flex-direction: row;
+    
+}
 
 
 
