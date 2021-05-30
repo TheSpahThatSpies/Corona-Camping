@@ -784,5 +784,11 @@ body{
 }
 
 .p-om-os{
-    margin: 20px;
+    margin: 25px;
+    margin-bottom: 40px;
+}
+
+.h1-om-os{
+    margin-top: 25px;
+    margin-left: 25px;
 }
