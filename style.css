@@ -277,13 +277,16 @@ body{
     margin-bottom: 12px;
 }
 
-.prisliste__teltcamp--priser {
+.prisliste__teltcamp--priser--container {
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
-
+.prisliste__teltcamp--pris {
+    margin-bottom: 20px;
+}
 
 
 
