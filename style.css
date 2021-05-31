@@ -183,7 +183,7 @@ body{
 /* X-transition - luk-effekt på burgermenu */
 
 .header .menu-btn:checked~.menu-content {
-    max-height: 800px;
+    max-height: 700px;
 }
 
 .header .menu-btn:checked~.menu-icon .nav-icon {
@@ -288,7 +288,9 @@ body{
     margin-bottom: 20px;
 }
 
-
+.menu__content--skrift {
+    color: var(--body);
+}
 
 
 
@@ -540,7 +542,7 @@ body{
 
 .kontaktinformationer__liste li {
     font-family: 'Lato', sans-serif;
-    padding: 4px;
+    padding: 5px;
     list-style: none;
     text-decoration: none;
     margin-left: 10px;
