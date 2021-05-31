@@ -46,6 +46,8 @@ body{
     background-color: var(--body);
 }
 
+
+/* Alexander */
 /* Navigation og burgermenu*/
 
 .header {
@@ -368,201 +370,154 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Christians afsnit */
+/*--------------------Forside--------------------*/
+/* Sætter baggrund og position for slideshow */
+.forside-slideshow {
+    background-color: var(--baggrund);
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Gemmer slideshow billeder til at starte med */
+  .forside-slideshow__slide {
+    display: none;
+  }
+  
+  /* Sætter størrelse på slideshow billeder */
+  .forside-slideshow__img{
+      width: 100%;
+      height: 3%;
+  }
+  
+  /* Styring af transition/animation imellem slideskift. */
+  .forside-slideshow__fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  /* Keyframes til slideshow */
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  /* Baggrundsfarve på sektion for "Corona Camp Tilbyder" + Sætter indhold i flex */
+  .forside-tilbyder{
+      background-color: var(--baggrund);
+      display: flex;
+  }
+  
+  /* Position af ikon containers */
+  .forside-tilbyder__container{
+      margin-left: 10%;
+  }
+  
+  /* Størrelse af ikoner */
+  .forside-tilbyder__ikon{
+      width: 30px;
+  }
+  
+  /* Position + indsætning af flex på sektion om "Hvem er vi?" */
+  .forside-hvemsektion{
+      margin-top: 20px;
+      display: flex;
+  }
+  
+  /* Position af h1-tekst i "Hvem er vi?" sektion. */
+  .forside-hvemervi{
+      margin-left: 10px;
+  }
+  
+  /* Position af brødtekst i "Hvem er vi?" sektion. */
+  .forside-hvem-p{
+      margin-left: 7px;
+  }
+  
+  /* Styling af billede ved siden af tekst om Corona Camping. */
+  .forside-stibillede{
+      margin-top: 5px;
+      margin-left: 5px;
+      width: 170px;
+  }
+  
+  /* Justerer position af første knap på forside */
+  .forside-knap-read{
+      margin-top: 20px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+  }
+  
+  /* Styling på indsatte links i forside knapper. */
+  .forside-knap__link{
+      text-decoration: none;
+      color: var(--body);
+      font-family: 'Lato', sans-serif;
+  }
+  
+  /* Tilpasning af h2 på forside ift. farver, position og skriftudseende. */
+  .forside-h2{
+      background-color: var(--baggrund);
+      color: var(--body);
+      font-size: 22px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      font-weight: lighter;
+  }
+  
+  /* Indsætning af baggrundsfarve på Facebook display */
+  .fb-container{
+      background-color: var(--baggrund);
+  }
+  
+  /* Positionsjustering af Facebook display */
+  .fb-page{
+      margin-left: 10%;
+  }
+  
+  /* Position af h1-tekst i radio sektion. */
+  .forside-viharradio{
+      margin-top: 10px;
+      text-align: center;
+  }
+  
+  /* Position af brødtekst om radio. */
+  .forside-radio-p{
+      margin-left: 15px;
+      padding-bottom: 15px;
+  }
+  
+  /* Position af radio logo. */
+  .forside-radio-img{
+      margin-left: 3%;
+      width: 350px;
+  }
+  
+  /* Justerer position af anden knap på forside */
+  .forside-knap-lyt{
+      margin-top: 20px;
+      margin-left: 132px;
+      margin-bottom: 30px;
+  }
+
+
+
+
+
+
+
+
+
+/*Cecilies afsnit */
 /*Kontaktside*/
 
 .titel__kontaktos{
@@ -689,182 +644,7 @@ body{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Rosas afsnit */
 /* Om Corona Camping */ 
 
 .cc-campingvogn-image{
