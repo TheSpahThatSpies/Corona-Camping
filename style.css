@@ -892,18 +892,38 @@ body{
 /* Footer styling */
 
 footer{
-    
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: 14px;
+    margin: 2px;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
 }
 
 .wrapper-footer-kontakt{
-    margin-left: 10px;
+    align-items: flex-start;
+    width: 50%;
+
 }
 
 .wrapper-footer-find{
-    margin-right: 10px;
+ text-align: right;
+ align-items: flex-end;
+ width: 50%;
 
 }
 
 .wrapper-footer-find img{
     width: 40px;
+}
+
+.footer-copy{
+    text-align: center;
+    margin: 25px;
 }
