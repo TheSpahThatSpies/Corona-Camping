@@ -10,8 +10,9 @@
   
 h1 {
     font-size: 22px;
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
     font-weight: 100;
+    font-family: 'Ultra', serif;
 }
 
 p{
@@ -38,620 +39,647 @@ button {
     --skrift: #303030;
     --knap: #cd9c43;
     --baggrund: #326537;
-
-   --body: #efefe3;
+    --body: #efefe3;
 }
 /* Ændre farve af body på alle sider.*/
 body{
     background-color: var(--body);
 }
-/*--------------------Forside--------------------*/
-/* Sætter baggrund og position for slideshow */
-.forside-slideshow {
-  background-color: var(--baggrund);
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
 
-/* Gemmer slideshow billeder til at starte med */
-.forside-slideshow__slide {
-  display: none;
-}
 
-/* Sætter størrelse på slideshow billeder */
-.forside-slideshow__img{
-    width: 375px;
-    height: 240px;
-}
+/* Alexander */
+/* Navigation og burgermenu*/
 
-/* Styring af transition/animation imellem slideskift. */
-.forside-slideshow__fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* Keyframes til slideshow */
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* Baggrundsfarve på sektion for "Corona Camp Tilbyder" + Sætter indhold i flex */
-.forside-tilbyder{
+.header {
     background-color: var(--baggrund);
+    z-index: 3;
+    width: 100%;
+    height: 60px;
+    position: relative
+}
+
+.header ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0; 
+}
+
+.header ul a {
+    display: block;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    background: var(--baggrund);
+    color: var(--body);
+    margin-bottom: -5px;
+    letter-spacing: 1.5px;
+}
+
+.header .logo {
+    float: left;
+    display: block;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.header .menu-content {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
+
+/* header logo */
+.header__logo {
+   margin-top: 5px;
+   width: 100px;
+}
+
+/* Burgermenu ikon*/
+
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+/*Child til Label - midterste bar til burgermenu*/
+
+.header .menu-icon .nav-icon {
+    background: var(--body);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+
+/* top og bund bar til burgermenu -pseudoelementer*/
+
+.header .menu-icon .nav-icon:before {
+    background: var(--body);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px
+}
+
+.header .menu-icon .nav-icon:after {
+    background: var(--body);
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+/* styling af menu overskrift */
+
+.menu__content--overskrift--container {
+    width: 100%;
+    background-color: var(--baggrund);
+    width: 100%;
+    height: 60px;
+    
+}
+
+.menu__content--overskrift {
     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--baggrund);
+    color: var(--body);    
+    }
+
+.menu__content--streg {
+    
+    width: 20%;
+    height: 2px;
+    background-color: var(--body);
+    border-style: none;
 }
 
-/* Position af ikon containers */
-.forside-tilbyder__container{
-    margin-left: 10%;
+
+/* styling af underlinks */
+.menu__content--brodtekst {
+    display: block;
+    padding-top: 5px;
+    padding-left: 60px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Lato', sans-serif; ;
+    background: var(--baggrund);
+    color: var(--body);
+    margin-bottom: -5px;
 }
 
-/* Størrelse af ikoner */
-.forside-tilbyder__ikon{
-    width: 30px;
+/* X-transition - luk-effekt på burgermenu */
+
+.header .menu-btn:checked~.menu-content {
+    max-height: 700px;
 }
 
-/* Position + indsætning af flex på sektion om "Hvem er vi?" */
-.forside-hvemsektion{
+.header .menu-btn:checked~.menu-icon .nav-icon {
+    background: transparent;
+
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu-icon .nav-icon:after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+/* styling af side info/overskrift áf siden */
+
+.nav-info-boks {
+    background-color: var(--baggrund);
+}
+
+.nav-info-boks {
+    text-align: center;
+}
+
+.nav-overskrift {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -1px;
+}
+
+.nav-linje {
+    width: 20%;
+    height: 2px;
+    background-color: var(--body);
+    border-style: none;
+}
+
+.nav-overskrift h1 {
+    color: var(--body);
+}
+
+.nav-brodtekst p {
+    color: var(--body);
+    padding-bottom: 20px;
+}
+
+.Burger-logo {
+    background-color: var(--baggrund);
+}
+
+.Burger-logo img {
+    width: 200px;
+    height: auto;
+    margin-top: 30px;
+}
+
+.Burger-logo {
+    text-align: center;
+}
+
+/* billede til siden prisliste */
+
+.side__billede {
+    background-color: var(--body);
+}
+
+.side__billede img{
+    max-width: 100%;   
+}
+
+/* prisliste styling */
+
+.prisliste {
+    background-color: var(--body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    padding-bottom: 50px;
+}
+.prisliste__container {
+    background-color: #FCFCFC ;
+    width: 85%;
+}
+
+.prisliste__container--overskrift {
+    margin-bottom: 12px;
+}
+
+.prisliste__teltcamp--priser--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-top: 20px;
-    display: flex;
-}
-
-/* Position af h1-tekst i "Hvem er vi?" sektion. */
-.forside-hvemervi{
     margin-left: 10px;
+    margin-right: 10px;
 }
 
-/* Position af brødtekst i "Hvem er vi?" sektion. */
-.forside-hvem-p{
-    margin-left: 7px;
+.prisliste__teltcamp--content {
+    text-align:left ;
 }
 
-/* Styling af billede ved siden af tekst om Corona Camping. */
-.forside-stibillede{
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 170px;
+.prisliste__teltcamp--content p {
+    margin-bottom: 5px;
 }
 
-/* Justerer position af første knap på forside */
-.forside-knap-read{
+.prisliste__teltcamp--pris p{
+    margin-bottom: 5px;
+}
+
+.prisliste__teltcamp--pris {
+    text-align: right;
+}
+
+.menu__content--skrift {
+    color: var(--body);
+}
+
+.prisliste__container--overskrift {
+    text-align: center;
+}
+
+.prisliste__teltcamp--overskrift {
+    text-align: center;
+}
+
+.prisliste__teltcamp--overskrift p{
+    font-weight: 100;
+}
+
+/* prisliste knap styling */
+
+.prisliste__button {
+    text-align: center;
     margin-top: 20px;
-    margin-left: 40px;
     margin-bottom: 20px;
 }
 
-/* Styling på indsatte links i forside knapper. */
-.forside-knap__link{
-    text-decoration: none;
+/* styling af sektion værdisæt */
+
+.vaerdisaet {
+    background-color: var(--baggrund);
     color: var(--body);
+    display: flex;
+    justify-content: center;
+}
+
+.vaerdisaet__overskrift {
+    text-align: center;
+}
+
+.vaerdisaet__liste--li {
     font-family: 'Lato', sans-serif;
 }
 
-/* Tilpasning af h2 på forside ift. farver, position og skriftudseende. */
-.forside-h2{
-    background-color: var(--baggrund);
-    color: var(--body);
-    font-size: 22px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.vaerdisaet__button {
     text-align: center;
-    font-weight: lighter;
-}
-
-/* Indsætning af baggrundsfarve på Facebook display */
-.fb-container{
-    background-color: var(--baggrund);
-}
-
-/* Positionsjustering af Facebook display */
-.fb-page{
-    margin-left: 10%;
-}
-
-/* Position af h1-tekst i radio sektion. */
-.forside-viharradio{
-    margin-top: 10px;
-    text-align: center;
-}
-
-/* Position af brødtekst om radio. */
-.forside-radio-p{
-    margin-left: 15px;
-    padding-bottom: 15px;
-}
-
-/* Position af radio logo. */
-.forside-radio-img{
-    margin-left: 3%;
-    width: 350px;
-}
-
-/* Justerer position af anden knap på forside */
-.forside-knap-lyt{
     margin-top: 20px;
-    margin-left: 132px;
+    padding-bottom: 20px;
+}
+.vaerdisaet__container{
+    width: 85%;
+}
+.vaerdisaet__overskrift {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.Vaerdisaet__brodtekst {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/* Christians afsnit */
+/*--------------------Forside--------------------*/
+/* Sætter baggrund og position for slideshow */
+.forside-slideshow {
+    background-color: var(--baggrund);
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Gemmer slideshow billeder til at starte med */
+  .forside-slideshow__slide {
+    display: none;
+  }
+  
+  /* Sætter størrelse på slideshow billeder */
+  .forside-slideshow__img{
+      width: 100%;
+      height: 3%;
+  }
+  
+ 
+  /* Baggrundsfarve på sektion for "Corona Camp Tilbyder" + Sætter indhold i flex */
+  .forside-tilbyder{
+      background-color: var(--baggrund);
+      display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 20px;
+  }
+  
+  
+  /* Størrelse af ikoner */
+  .forside-tilbyder__ikon{
+      width: 30px;
+  }
+  
+  /* Position + indsætning af flex på sektion om "Hvem er vi?" */
+  .forside-hvemsektion{
+      margin-top: 20px;
+      display: flex;
+  }
+  
+  /* Position af h1-tekst i "Hvem er vi?" sektion. */
+  .forside-hvemervi{
+      margin-left: 10px;
+  }
+  
+  /* Position af brødtekst i "Hvem er vi?" sektion. */
+  .forside-hvem-p{
+      margin-left: 7px;
+  }
+  
+  /* Styling af billede ved siden af tekst om Corona Camping. */
+  .forside-stibillede{
+      margin-top: 5px;
+      margin-left: 5px;
+      width: 170px;
+  }
+  
+  /* Justerer position af første knap på forside */
+  .forside-knap-read{
+      margin-top: 20px;
+      margin-left: 40px;
+      margin-bottom: 20px;
+  }
+  
+  /* Styling på indsatte links i forside knapper. */
+  .forside-knap__link{
+      text-decoration: none;
+      color: var(--body);
+      font-family: 'Lato', sans-serif;
+  }
+  
+  /* Tilpasning af h2 på forside ift. farver, position og skriftudseende. */
+  .forside-h2{
+      background-color: var(--baggrund);
+      color: var(--body);
+      font-size: 22px;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      text-align: center;
+      font-weight: lighter;
+  }
+  
+  /* Indsætning af baggrundsfarve på Facebook display */
+  .fb-container{
+      background-color: var(--baggrund);
+      text-align: center;
+      padding-bottom: 50px;
+  }
+    
+  /* Position af h1-tekst i radio sektion. */
+  .forside-viharradio{
+      margin-top: 10px;
+      text-align: center;
+  }
+  
+  /* Position af brødtekst om radio. */
+  .forside-radio-p{
+      margin-left: 15px;
+      padding-bottom: 15px;
+  }
+  
+  /* Position af radio logo. */
+  .forside-radio-img{
+      margin-left: 3%;
+      width: 350px;
+  }
+  
+  /* Justerer position af anden knap på forside */
+  .forside-knap-lyt{
+      margin-top: 20px;
+      margin-left: 132px;
+      margin-bottom: 30px;
+  }
+
+
+
+
+
+
+
+
+
+/*Cecilies afsnit */
+/*Kontaktside*/
+
+.titel__kontaktos{
+    background-color: var(--baggrund);
+    min-width: 100%;
+    height: 100px;
+    text-align: center;
+    color: var(--body);
+}
+
+.ejere__img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+
+.card__kontakt {
+    background-color: var(--baggrund);
+    width: 85%;
+    height: 200px;
+    color: var(--body);
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+.kontaktinformationer__liste li {
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.kontaktinformationer__li {
+    padding: 4px;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+/*Kontakformular opbygget efter w3schools (se link i HTML)*/
+
+.card__kontakt--overskrift {
+    text-align: center;
+    padding-top: 0.6em;
+}
+
+.kontakt__formular--overskrift {
+    color: var(--skrift);
+    padding-top: 2em;
+    padding-bottom: 0.5em;
+}
+
+.kontakt__formular--brodtekst {
+    color: var(--skrift);
+    padding-bottom: 0.5em;
+    margin-left: 2.4em;
+    margin-right: 2.4em;
+}
+
+
+.kontakt__formular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.form {
+    text-align: center;
+}
+
+.kontakt__formular--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--kasser);
+    padding: 20px;
+    width: 70%;
+    margin-top: 20px;
     margin-bottom: 30px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.kontakt__formular--container input, textarea {
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    resize: none;
+}
+
+#fnavn, #besked, #email {
+    color: var(--skrift);
+    background-color: var(--kasser);
+    padding-left: 10px;
+}
+
+
+.kontakt__formular--brodtekst {
+    color: var(--skrift);
+    padding-bottom: 0.5em;
+    margin-left: 2.4em;
+    margin-right: 2.4em;
+}
+
+
+
+/* Rosas afsnit */
+/* Om Corona Camping */ 
+
+.cc-campingvogn-image{
+    width: 100vw;
+}
+
+.cc-natur-image{
+    width: 100vw;
+}
+
+.p-om-os{
+    margin: 25px;
+    margin-bottom: 40px;
+}
+
+.h1-om-os{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+
+
+/* Footer styling */
+
+footer{
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: 14px;
+    margin: 2px;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.wrapper-footer-kontakt{
+    align-items: flex-start;
+    width: 50%;
+
+}
+
+.wrapper-footer-find{
+ text-align: right;
+ align-items: flex-end;
+ width: 50%;
+
+}
+
+.wrapper-footer-find img{
+    width: 40px;
+}
+
+.footer-copy{
+    text-align: center;
+    margin: 25px;
+}
