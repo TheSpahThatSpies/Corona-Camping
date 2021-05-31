@@ -185,7 +185,7 @@ body{
 /* X-transition - luk-effekt på burgermenu */
 
 .header .menu-btn:checked~.menu-content {
-    max-height: 800px;
+    max-height: 700px;
 }
 
 .header .menu-btn:checked~.menu-icon .nav-icon {
@@ -291,7 +291,9 @@ body{
     margin-bottom: 20px;
 }
 
-
+.menu__content--skrift {
+    color: var(--body);
+}
 
 
 
