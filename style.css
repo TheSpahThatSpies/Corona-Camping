@@ -274,7 +274,6 @@ body{
 .prisliste__container {
     background-color: #FCFCFC ;
     width: 85%;
-    
 }
 
 .prisliste__container--overskrift {
@@ -286,6 +285,12 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.prisliste__teltcamp--content {
+    text-align:left ;
 }
 
 .prisliste__teltcamp--pris {
