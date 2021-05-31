@@ -391,34 +391,18 @@ body{
       height: 3%;
   }
   
-  /* Styring af transition/animation imellem slideskift. */
-  .forside-slideshow__fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  /* Keyframes til slideshow */
-  @-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
-  @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-  }
-  
+ 
   /* Baggrundsfarve på sektion for "Corona Camp Tilbyder" + Sætter indhold i flex */
   .forside-tilbyder{
       background-color: var(--baggrund);
       display: flex;
+      justify-content: space-evenly;
+      padding-bottom: 20px;
   }
   
   /* Position af ikon containers */
   .forside-tilbyder__container{
-      margin-left: 10%;
+      
   }
   
   /* Størrelse af ikoner */
@@ -469,7 +453,7 @@ body{
       color: var(--body);
       font-size: 22px;
       padding-top: 10px;
-      padding-bottom: 10px;
+      padding-bottom: 20px;
       text-align: center;
       font-weight: lighter;
   }
@@ -477,13 +461,10 @@ body{
   /* Indsætning af baggrundsfarve på Facebook display */
   .fb-container{
       background-color: var(--baggrund);
+      text-align: center;
+      padding-bottom: 50px;
   }
-  
-  /* Positionsjustering af Facebook display */
-  .fb-page{
-      margin-left: 10%;
-  }
-  
+    
   /* Position af h1-tekst i radio sektion. */
   .forside-viharradio{
       margin-top: 10px;
