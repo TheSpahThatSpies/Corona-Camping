@@ -270,6 +270,7 @@ body{
     flex-direction: column;
     align-items: center;
     margin-top: -50px;
+    padding-bottom: 50px;
 }
 .prisliste__container {
     background-color: #FCFCFC ;
@@ -293,31 +294,74 @@ body{
     text-align:left ;
 }
 
+.prisliste__teltcamp--content p {
+    margin-bottom: 5px;
+}
+
+.prisliste__teltcamp--pris p{
+    margin-bottom: 5px;
+}
+
 .prisliste__teltcamp--pris {
-    margin-bottom: 20px;
+    text-align: right;
 }
 
 .menu__content--skrift {
     color: var(--body);
 }
 
+.prisliste__container--overskrift {
+    text-align: center;
+}
 
+.prisliste__teltcamp--overskrift {
+    text-align: center;
+}
 
+.prisliste__teltcamp--overskrift p{
+    font-weight: 100;
+}
 
+/* prisliste knap styling */
 
+.prisliste__button {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
+/* styling af sektion værdisæt */
 
+.vaerdisaet {
+    background-color: var(--baggrund);
+    color: var(--body);
+    display: flex;
+    justify-content: center;
+}
 
+.vaerdisaet__overskrift {
+    text-align: center;
+}
 
+.vaerdisaet__liste--li {
+    font-family: 'Lato', sans-serif;
+}
 
-
-
-
-
-
-
-
-
+.vaerdisaet__button {
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+.vaerdisaet__container{
+    width: 85%;
+}
+.vaerdisaet__overskrift {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.Vaerdisaet__brodtekst {
+    margin-bottom: 20px;
+}
 
 
 
