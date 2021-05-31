@@ -47,17 +47,50 @@
                 <img src="images/Icon map-pet-store.svg" alt="dyr" class="forside-tilbyder__ikon">
             </div>
         </section>
-        <section class="forside-hvemervi">
+        <section class="forside-hvemsektion">
             <article>
-                <h1 class="forside-h1">Hvem er vi?</h1>
-                <p class="forside-p">For enden af snørklede<br>veje ligger denne lille<br>perle af en camping-<br>plads, gemt langt væk<br>fra hverdagens stress<br>og jag.<br><br>På Corona Camping er fællesskabet en del af vores kerneværdi. Vi vægter socialt samvær højt, men har også forståelse for når man har brug for at være alene. Vi løser problemer og udfordringer sammen og alle hjælper hinanden på pladsen. </p>
+                <h1 class="forside-hvemervi">Hvem er vi?</h1>
+                <p class="forside-hvem-p">For enden af snørklede<br>veje ligger denne lille<br>perle af en camping-<br>plads, gemt langt væk<br>fra hverdagens stress<br>og jag.<br><br>På Corona Camping er fællesskabet en del af vores kerneværdi. Vi vægter socialt samvær højt, men har også forståelse for når man har brug for at være alene. Vi løser problemer og udfordringer sammen og alle hjælper hinanden på pladsen. </p>
             </article>
             <img class="forside-stibillede" src="images/sti.jpg" alt="sti-billede">
         </section>
-        <button class="forside-knap"><a href="index.html" class="forside-knap__link">Læs mere</a></button>
-        <h1>Vi har også en radio!</h1>
-        <img src="images/Radio-Corona.png">
+        <button class="forside-knap-read"><a href="index.html" class="forside-knap__link">Læs mere</a></button>
+    
+        <h2 class="forside-h2">Følg os på Facebook</h2>
+
+        <!--med inspiration fra: https://stackoverflow.com/questions/19358541/embedding-facebook-feed-into-html -->
+        <div id="fb-root"></div>
+        
+        <div class="fb-container">
+            <div class="fb-page" 
+                data-href="https://www.facebook.com/Corona-Camping-192375054428877" 
+                data-tabs="timeline" 
+                data-small-header="false" 
+                data-adapt-container-width="true" 
+                data-hide-cover="false" 
+                data-show-facepile="true">
+                <div class="fb-xfbml-parse-ignore">
+                    <blockquote cite="https://www.facebook.com/facebook">
+                    <a href="https://www.facebook.com/facebook">Facebook</a>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="forside-viharradio">Vi har også en radio!</h1>
+        <p class="forside-radio-p">På Corona Camping har vi vores egen radiostation, med interviews, samt hvad der sker på pladsen og masser af god musik og podcasts!</p>
+        <img class="forside-radio" src="images/radio-corona.png" alt="corona-radio">
+        <button class="forside-knap-lyt"><a href="index.html" class="forside-knap__link">Lyt her</a></button>
     </main>
     <script src="main.js"></script>
+    <!--med inspiration fra: https://stackoverflow.com/questions/19358541/embedding-facebook-feed-into-html -->
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId={APP_ID}";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 </body>
 </html>
