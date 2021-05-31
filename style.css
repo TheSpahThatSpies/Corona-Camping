@@ -842,3 +842,24 @@ body{
     margin-left: 25px;
 }
 
+
+
+
+/* Footer styling */
+
+footer{
+    
+}
+
+.wrapper-footer-kontakt{
+    margin-left: 10px;
+}
+
+.wrapper-footer-find{
+    margin-right: 10px;
+
+}
+
+.wrapper-footer-find img{
+    width: 40px;
+}
