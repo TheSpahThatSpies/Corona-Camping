@@ -12,6 +12,7 @@ h1 {
     font-size: 22px;
     letter-spacing: 3px;
     font-weight: 100;
+    font-family: 'Ultra', serif;
 }
 
 p{
@@ -70,6 +71,7 @@ body{
     font-size: 20px;
     background: var(--baggrund);
     color: var(--body);
+    margin-bottom: -5px;
 }
 
 .header .logo {
@@ -154,7 +156,8 @@ body{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    background-color: var(--baggrund);    
+    background-color: var(--baggrund);
+    color: var(--body);    
     }
 
 .menu__content--streg {
@@ -172,10 +175,11 @@ body{
     padding-top: 5px;
     padding-left: 60px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Lato', sans-serif; ;
     background: var(--baggrund);
     color: var(--body);
+    margin-bottom: -5px;
 }
 
 /* X-transition - luk-effekt på burgermenu */
@@ -248,16 +252,43 @@ body{
 
 /* billede til siden prisliste */
 
+.side__billede {
+    background-color: var(--body);
+}
+
 .side__billede img{
     max-width: 100%;   
 }
 
+/* prisliste styling */
 
+.prisliste {
+    background-color: var(--body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+.prisliste__container {
+    background-color: #FCFCFC ;
+    width: 85%;
+    
+}
 
+.prisliste__container--overskrift {
+    margin-bottom: 12px;
+}
 
+.prisliste__teltcamp--priser--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+}
 
-
-
+.prisliste__teltcamp--pris {
+    margin-bottom: 20px;
+}
 
 
 
@@ -509,9 +540,18 @@ body{
 }
 
 
-.kontaktinformationer__liste, li {
+
+
+.kontaktinformationer__liste li {
     font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.kontaktinformationer__li {
     padding: 4px;
+    font-family: 'Lato', sans-serif;
     list-style: none;
     text-decoration: none;
     margin-left: 10px;
