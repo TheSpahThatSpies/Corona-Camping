@@ -679,3 +679,251 @@ body{
     background-color: var(--kasser);
     padding-left: 10px;
 }
+
+
+.kontakt__formular--brodtekst {
+    color: var(--skrift);
+    padding-bottom: 0.5em;
+    margin-left: 2.4em;
+    margin-right: 2.4em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Om Corona Camping */ 
+
+.cc-campingvogn-image{
+    width: 100vw;
+}
+
+.cc-natur-image{
+    width: 100vw;
+}
+
+.p-om-os{
+    margin: 25px;
+    margin-bottom: 40px;
+}
+
+.h1-om-os{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+
+
+/* Footer styling */
+
+footer{
+    margin-top: 10px;
+}
+
+footer p{
+    font-size: 14px;
+    margin: 2px;
+}
+
+.footer-flex{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.wrapper-footer-kontakt{
+    align-items: flex-start;
+    width: 50%;
+
+}
+
+.wrapper-footer-find{
+ text-align: right;
+ align-items: flex-end;
+ width: 50%;
+
+}
+
+.wrapper-footer-find img{
+    width: 40px;
+}
+
+.footer-copy{
+    text-align: center;
+    margin: 25px;
+}
