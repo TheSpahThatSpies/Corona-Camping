@@ -70,6 +70,7 @@ body{
     font-size: 20px;
     background: var(--baggrund);
     color: var(--body);
+    margin-bottom: -5px;
 }
 
 .header .logo {
@@ -172,10 +173,11 @@ body{
     padding-top: 5px;
     padding-left: 60px;
     text-decoration: none;
-    font-size: 10px;
+    font-size: 14px;
     font-family: 'Lato', sans-serif; ;
     background: var(--baggrund);
     color: var(--body);
+    margin-bottom: -5px;
 }
 
 /* X-transition - luk-effekt på burgermenu */
@@ -509,9 +511,16 @@ body{
 }
 
 
-.kontaktinformationer__liste, li {
+.kontaktinformationer__liste{
     font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.kontaktinformationer__li {
     padding: 4px;
+    font-family: 'Lato', sans-serif;
     list-style: none;
     text-decoration: none;
     margin-left: 10px;
