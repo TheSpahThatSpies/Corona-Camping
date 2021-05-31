@@ -399,8 +399,7 @@ body{
       justify-content: space-evenly;
       padding-bottom: 20px;
   }
-  
-  
+    
   /* Størrelse af ikoner */
   .forside-tilbyder__ikon{
       width: 30px;
@@ -458,7 +457,7 @@ body{
   .fb-container{
       background-color: var(--baggrund);
       text-align: center;
-      padding-bottom: 50px;
+      padding-bottom: 20px;
   }
     
   /* Position af h1-tekst i radio sektion. */
