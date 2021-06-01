@@ -638,13 +638,26 @@ body{
 }
 
 .h1-om-os{
-    margin-top: 25px;
+    padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
 }
 
+.cc__trustpilot {
+    background-color: var(--baggrund);
+    margin-top: -4px;
+}
+
+.cc__trustpilot h1 {
+    color: var(--body);
+}
+
+.trustpilot-nextprev {
+    color: var(--body);
+}
+
 .trustpilot-container {
-    max-width: 1000px;
+    width: 85%;
     position: relative;
     margin: auto;
     padding-bottom: 35px;
@@ -788,6 +801,8 @@ footer p{
 /* Alex media queries */
 
 @media screen and (min-width: 800px) {
+    
+    /* inforamtioner sider */
     .faciindkob__container {
         flex-direction: row;
         justify-content: space-between;
@@ -797,11 +812,8 @@ footer p{
         max-width: 50%;
     }
 
-    .side__billede {
-        width: auto;
-       
-    }
-    
+    /*om corona camping side */
+
     .his__container {
         display: flex;
         flex-direction: row-reverse;
@@ -810,5 +822,77 @@ footer p{
     .nat__container {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
     }
+
+    .his__img {
+        width: 50%;
+    }
+
+    .his__img img{
+        width: 100%;
+        margin-bottom: -3px;
+    }
+
+    .cc__historie {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .cc__historie h1 {
+        text-align: left;
+        margin-left: 25px;
+    }
+    .cc__nat {
+        width: 50%;
+    }
+
+    .cc__nat img {
+        width: 100%;
+        margin-top: 0%;
+    }
+
+    .cc__natur {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .cc__natur h1 {
+        text-align: left;
+        margin-left: 25px;
+    }
+    
+    .trustpilot-container {
+        max-width: 50%;
+    }
+
+    /* prisliste */
+    .prisliste__container {
+        width: 50%;
+    }
+
+    .side__billede img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    /* Footer */
+    .footer-flex p {
+        font-size: 20px;
+    }
+    .footer-flex {
+        margin-left: 11%;
+        margin-right: 11%;   
+    }
+    
+    .footer-copy p {
+        font-size: 20px;
+    }
+
+    .wrapper-footer-find img {
+        width: 15%;
+    }
+
 }
