@@ -479,10 +479,18 @@ body{
   }
   
   /* Justerer position af anden knap på forside */
-  .forside-knap-lyt{
+  .forside-knap{
       margin-top: 20px;
-      margin-left: 132px;
       margin-bottom: 30px;
+  }
+
+  .forside-knap__container{
+       text-align: center;
+  }
+
+  .forside-booking-knap{
+      background-color: var(--baggrund);
+      text-align: center;
   }
 
 
