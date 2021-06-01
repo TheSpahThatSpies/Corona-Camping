@@ -1,3 +1,4 @@
+// Forside slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
