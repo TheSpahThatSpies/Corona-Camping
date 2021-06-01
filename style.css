@@ -507,8 +507,9 @@ body{
 
 .card__kontakt {
     background-color: var(--baggrund);
-    height: 200px;
+    height: auto;
     color: var(--body);
+    padding-bottom:30px ;
 }
 
 .card__section {
