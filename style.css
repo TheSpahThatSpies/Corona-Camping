@@ -633,13 +633,11 @@ body{
 }
 
 .p-om-os{
-    margin: 25px;
-    margin-bottom: 40px;
+    margin: 20px;
 }
 
 .h1-om-os{
     padding-top: 25px;
-    padding-bottom: 25px;
     text-align: center;
 }
 
@@ -688,7 +686,7 @@ body{
 /* Footer styling */
 
 footer{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 footer p{
@@ -699,21 +697,14 @@ footer p{
 .footer-flex{
     display: flex;
     flex-direction: row;
-    margin: 10px;
-}
-
-.wrapper-footer-kontakt{
-    align-items: flex-start;
-    width: 50%;
-
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
 }
 
 .wrapper-footer-find{
  text-align: right;
- align-items: flex-end;
- width: 50%;
-
-}
+ }
 
 .wrapper-footer-find img{
     width: 40px;
@@ -831,7 +822,9 @@ footer p{
 
     .his__img img{
         width: 100%;
-        margin-bottom: -3px;
+        height: 420px;
+        object-fit: cover;
+        margin-bottom: -4px;
     }
 
     .cc__historie {
@@ -849,7 +842,8 @@ footer p{
 
     .cc__nat img {
         width: 100%;
-        margin-top: 0%;
+        height: 420px;
+        object-fit: cover;
     }
 
     .cc__natur {
@@ -877,18 +871,15 @@ footer p{
         object-fit: cover;
     }
 
+    .vaerdisaet__container {
+        width: 50%;
+    }
 
     /* Footer */
-    .footer-flex p {
-        font-size: 20px;
-    }
-    .footer-flex {
-        margin-left: 11%;
-        margin-right: 11%;   
-    }
     
-    .footer-copy p {
-        font-size: 20px;
+    .footer-flex {
+        justify-content: space-evenly;
+                     
     }
 
     .wrapper-footer-find img {
