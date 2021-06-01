@@ -725,3 +725,59 @@ footer p{
     text-align: center;
     margin: 25px;
 }
+
+
+/*Monicas/Alexander afsnit*/
+/*Informationer*/
+
+.faciindkob__container {
+    margin-left: 20px;
+}
+
+.faciindkob__faciliteter--overskrift {
+    margin-top:20px ;
+}
+
+.faciindkob__liste--li {
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+}
+
+.faciindkob__liste {
+    margin-top: 20px;
+}
+
+.faciindkob__indkob--overskrift {
+    margin-top: 20px;
+}
+
+.faciindkob__indkob--brodtekst {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nemlig {
+    color: var(--skrifttekst);
+    text-decoration: none;
+}
+
+.aktiviteter__container {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.aktiviteter__container--overskrift {
+    margin-top: 20px; 
+}
+
+.aktiviteter__container--brodtekst {
+    margin-top: 20px;
+}
+
+.p-køre {
+    margin-top: 40px;
+}
+
+.p-overskrift {
+    margin-top: 20px;
+}
