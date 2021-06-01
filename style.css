@@ -580,7 +580,7 @@ body{
     font-family: 'Lato', sans-serif;
     background-color: var(--kasser);
     padding: 20px;
-    width: 70%;
+    width: 82%;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -680,7 +680,7 @@ body{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
+/* Rosa/Alex */
 /* Footer styling */
 
 footer{
@@ -875,8 +875,17 @@ footer p{
 
     /* Kontakt os */
 
+    .card__container {
+        width: 50%;
+    }
+    
+    .kontakt__formular--container {
+        width: 48%;
+    }
 
-
+    .kontakt__formular--brodtekst {
+        width: 50%;
+    }
     /* Footer */
     
     .footer-flex {
