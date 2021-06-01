@@ -639,8 +639,8 @@ body{
 
 .h1-om-os{
     margin-top: 25px;
-    margin-left: 25px;
     padding-bottom: 25px;
+    text-align: center;
 }
 
 .trustpilot-container {
@@ -774,6 +774,16 @@ footer p{
     font-weight: 700;
 }
 
+/*Alex om corna camping */
+.his__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nat__container {
+    display: flex;
+    flex-direction: column;
+}
 
 /* Alex media queries */
 
@@ -792,4 +802,13 @@ footer p{
        
     }
     
+    .his__container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .nat__container {
+        display: flex;
+        flex-direction: row;
+    }
 }
