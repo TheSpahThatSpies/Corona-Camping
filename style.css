@@ -49,6 +49,19 @@ body{
 /* Alexanders afsnit */
 /* Navigation og burgermenu*/
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 60%;
+    float: right;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--body);
+}
 .header {
     background-color: var(--baggrund);
     z-index: 3;
@@ -897,4 +910,14 @@ footer p{
         width: 15%;
     }
 
+    /* bruger menu */
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
 }
