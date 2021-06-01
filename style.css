@@ -488,53 +488,6 @@ body{
 
 
 
-/*Informationer*/
-
-.faciliteter__overskrift {
-   text-align: center; 
-   padding-top: 30px;
-   padding-bottom: 20px;
-}
-
-.liste1 {
- font-size: 18px;
- font-family:'Lato', sans-serif;
- padding-top: 10px;
- padding-left: 50px;
- padding-right: 30px;
-}
-
-.liste2 {
-    font-size: 18px;
-    font-family:'Lato', sans-serif;
-    padding-top: 15px;
-    padding-left: 50px;
-   }
-
-.liste3 {
-    font-size: 18px;
-    font-family:'Lato', sans-serif;
-    padding-top: 15px;
-    padding-left: 50px;
-    padding-right: 30px;
-   }
-
-.liste4 {
-    font-size: 18px;
-    font-family:'Lato', sans-serif;
-    padding-top: 15px;
-    padding-left: 50px;
-    padding-bottom: 40px;
-   }
-
-p {
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-bottom: 40px;
-    line-height: 24px;
-}
-
 
 /*Cecilies afsnit */
 /*Kontaktside*/
