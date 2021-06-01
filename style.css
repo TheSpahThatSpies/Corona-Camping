@@ -684,50 +684,57 @@ footer p{
 }
 
 
-/*Monicas afsnit*/
+/*Monicas/Alexander afsnit*/
 /*Informationer*/
 
-.faciliteter__overskrift {
-   text-align: center; 
-   padding-top: 30px;
-   padding-bottom: 20px;
+.faciindkob__container {
+    margin-left: 20px;
 }
 
-.liste1 {
- font-size: 18px;
- font-family:'Lato', sans-serif;
- padding-top: 10px;
- padding-left: 50px;
- padding-right: 30px;
+.faciindkob__faciliteter--overskrift {
+    margin-top:20px ;
 }
 
-.liste2 {
-    font-size: 18px;
-    font-family:'Lato', sans-serif;
-    padding-top: 15px;
-    padding-left: 50px;
-   }
+.faciindkob__liste--li {
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+}
 
-.liste3 {
-    font-size: 18px;
-    font-family:'Lato', sans-serif;
-    padding-top: 15px;
-    padding-left: 50px;
-    padding-right: 30px;
-   }
+.faciindkob__liste {
+    margin-top: 20px;
+}
 
-.liste4 {
-    font-size: 18px;
-    font-family:'Lato', sans-serif;
-    padding-top: 15px;
-    padding-left: 50px;
-    padding-bottom: 40px;
-   }
+.faciindkob__indkob--overskrift {
+    margin-top: 20px;
+}
 
-p {
-    padding-left: 30px;
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-bottom: 40px;
-    line-height: 24px;
+.faciindkob__indkob--brodtekst {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nemlig {
+    color: var(--skrifttekst);
+    text-decoration: none;
+}
+
+.aktiviteter__container {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.aktiviteter__container--overskrift {
+    margin-top: 20px; 
+}
+
+.aktiviteter__container--brodtekst {
+    margin-top: 20px;
+}
+
+.p-køre {
+    margin-top: 40px;
+}
+
+.p-overskrift {
+    margin-top: 20px;
 }

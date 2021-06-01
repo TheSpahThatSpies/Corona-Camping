@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Informationer</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="noindex, nofollow">
     <link rel="stylesheet" href="style.css">
 </head> 
 
@@ -12,7 +15,7 @@
     <header>  
         <!--Burgermenu - nav-->
         <div class="header">
-            <img class="header__logo" src="logoCCtilWeb.png" alt="Logo">
+            <a href="index.html"><img class="header__logo" src="logoCCtilWeb.png" alt="Logo"></a>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             
@@ -49,69 +52,101 @@
             </div>
     
             <div class="nav-brodtekst">
-                <p>Overnatningsmuligheder og priser for overnatning</p>
+                <p>Generel information, seværdigheder og regler</p>
             </div>
     </section>
-    <img src="/images/bad.jpeg" >
-    <div class="faciliteter/indkøbsmuligheder">
-          <h2>Faciliteter</h2>
-     <ul class="liste">
-         <li>Toiletter og bad (også afløb til kemiske toiletter)</li>
-         <li>Vaske-køkken med varmt vand og vaskemaskine</li>
-         <li>Udendørs terrasse med overdækning og stor grill</li>
-         <li>Kæledyr er tilladt efter aftale</li>
-     </ul>
-     <h2>Indkøbsmuligheder</h2>
-     <p>Få dine varer leveret direkte med nemlig.com
-        Mosehuset:
-        Tag en køretur til stedet, hvor de hyggelige, gamle huse ligger side om side i ét af Sjællands smukkeste landskaber. Stemningen af nostalgi når helt i top, når du dufter og ser Mosehusets smagfulde udvalg.
-        Mosehuset har mere end 250 theblandinger. luksuskaffe og chokolade. Vin og krydderier samt bolsjer og sukkerfrit slik. Spændende brugskunst. Nisser på loftet hele året og et stort udvalg af nostalgiske glansbilleder, påklædningsdukker, lækre sæber og meget andet, du ikke finder andre steder.</p>  
-    </div>
 
-    <img src="/images/soe.jpeg">
-    <div class="Aktiviteter">
-       <h2>Aktiviteter i området</h2>
-     <p>Udover naturen findes der flere seværdigheder i nærområdet. Gå eks. en tur over i det hyggelige the-hus med alverdens lækkerier, eller nyd en pandekage efter en spadsertur i området, i Pandekagehuset. Malerklemmen ligger også i nærheden, og byder på restaurant, og i sæsonen mange besøgende motorcyklister.
-      Er du villig til at køre lidt længere, så er der rigtig mange muligheder:
-        
-        Sporvognsmuseet
-        Nærmeste seværdighed, er Sporvognsmuseet som ligger i Bidstrup Skovene 10 km. væk. På museet er der også udstillet gamle bybusser og trolleybusser, samt to gamle sporvognsremiser.
-        
-        Sagnlandet Lejre
-        En anden seværdighed som virkelig er værd at besøge, er det historisk- & arkæologiske forsøgscenter i Lejre. Her kan man prøve en masse spændende ting, og se hvordan man levede for længe siden, absolut et besøg værd, særligt med børn.
-        
-        Roskilde vikingeskibsmusseum
-        Endnu et sted hvor man også kan så et kig ind i fortiden er i Vikingehallen i Roskilde. Her kan man bl.a. se hvordan de gamle vikingeskibe er lavet, med datidens værktøj, og udstillingen huser også flere fund af skibe der er gjort i området omkring museet.
-        
-        Ledreborg slot
-        En smuk seværdighed, som ligger blot 1,5 km. fra Sagnlandet Lejre, er Ledreborg Slot, som er en gammel herregård opført i midten af 1700-tallet</p>  
+    <section class="side__billede">
+        <img src="/images/bad.jpeg" alt="Campingvogn">
+    </section>
+
+<section class="faciindkob">
+    <div class="faciindkob__container">
+        <div class="faciindkob__faciliteter">
+            <div class="faciindkob__faciliteter--overskrift">  
+            <h2>Faciliteter</h2>
+            </div>
+
+        <ul class="faciindkob__liste"></ul>
+                    <li class="faciindkob__liste--li">Toiletter og bad (også afløb til kemiske toiletter)</li>
+                    <li class="faciindkob__liste--li">Vaske-køkken med varmt vand og vaskemaskine</li>
+                    <li class="faciindkob__liste--li">Udendørs terrasse med overdækning og stor grill</li>
+                    <li class="faciindkob__liste--li">Kæledyr er tilladt efter aftale</li>
+                </ul>
+        </div>
+
+        <div class="faciindkob__indkob">
+            <div class="faciindkob__indkob--overskrift">
+                <h2>Indkøbsmuligheder</h2>
+            </div>
+                <div class="faciindkob__indkob--brodtekst">
+                <p>Få dine varer leveret direkte med <a class="nemlig" href="">nemlig.com</a>
+                <br><br>
+                <p class="p-overskrift">Mosehuset:</p> 
+                <p> Tag en køretur til stedet, hvor de hyggelige, gamle huse ligger side om side i ét af Sjællands smukkeste landskaber. Stemningen af nostalgi når helt i top, når du dufter og ser Mosehusets smagfulde udvalg.
+                    <br><br> Mosehuset har mere end 250 theblandinger. luksuskaffe og chokolade. Vin og krydderier samt bolsjer og sukkerfrit slik. Spændende brugskunst. Nisser på loftet hele året og et stort udvalg af nostalgiske glansbilleder, påklædningsdukker, lækre sæber og meget andet, du ikke finder andre steder.
+                </p>
+            </div>
+        </div>
     </div>
-   
-    <img src="/images/skovsti.jpg">
+</section>
+
+    <section class="side__billede">
+        <img src="/images/soe.jpeg" alt="Campingvogn">
+    </section>
+
+<section class="aktiviteter">
+    <div class="aktiviteter__container">
+        
+            <div class="aktiviteter__container--overskrift">  
+            <h2>Aktiviteter i området</h2>
+            </div>
+
+            <div class="aktiviteter__container--brodtekst">
+                
+            <p class="aktiviteteter--tekst">Udover naturen findes der flere seværdigheder i nærområdet. Gå eks. en tur over i det hyggelige the-hus med alverdens lækkerier, eller nyd en pandekage efter en spadsertur i området, i Pandekagehuset. Malerklemmen ligger også i nærheden, og byder på restaurant, og i sæsonen mange besøgende motorcyklister.</p>
+                <p class="p-køre">Er du villig til at køre lidt længere, så er der rigtig mange muligheder:</p>
+        
+                <p class="p-overskrift">Sporvognsmuseet</p>
+                <p class="aktiviteter--tekst">Nærmeste seværdighed, er Sporvognsmuseet som ligger i Bidstrup Skovene 10 km. væk. På museet er der også udstillet gamle bybusser og trolleybusser, samt to gamle sporvognsremiser.</p>        
+                <p class="p-overskrift">Sagnlandet Lejre</p>
+                <p class="aktiviteter--tekst">En anden seværdighed som virkelig er værd at besøge, er det historisk- & arkæologiske forsøgscenter i Lejre. Her kan man prøve en masse spændende ting, og se hvordan man levede for længe siden, absolut et besøg værd, særligt med børn.</p>
+        
+                <p class="p-overskrift">Roskilde vikingeskibsmusseum</p>
+                <p class="aktiviteter--tekst">Endnu et sted hvor man også kan så et kig ind i fortiden er i Vikingehallen i Roskilde. Her kan man bl.a. se hvordan de gamle vikingeskibe er lavet, med datidens værktøj, og udstillingen huser også flere fund af skibe der er gjort i området omkring museet.</p>
+        
+                <p class="p-overskrift">Ledreborg slot</p>
+                <p class="aktiviteter--tekst">En smuk seværdighed, som ligger blot 1,5 km. fra Sagnlandet Lejre, er Ledreborg Slot, som er en gammel herregård opført i midten af 1700-tallet.</p>  
+            </div>
+   </div>
+</section>
+
+    <section class="side__billede">
+        <img src="/images/skovsti.jpg" alt="skovsti">
+    </section>
+
     <footer>
-        <div class="wrapper-footer-kontakt">
-            <p class="footer-kontakt">Kontakt:</p>
-            <p>Coronavej 1</p>
-            <p>4140 Borup</p>
-            <p>Tlf: 2068 4070</p>
-            <p>info@coronacamping.dk</p>
-        </div>
 
-        <div class="wrapper-footer-find">
-            <p class="footer-find">Find os her:</p>
-            <a
-                href="https://www.google.com/maps/place/Corona+Camping/@55.4646528,11.9414871,17z/data=!4m8!3m7!1s0x46528d13459d32c5:0x31cec32da5b05016!5m2!4m1!1i2!8m2!3d55.4646997!4d11.9438074"><img
-                    src="" alt="maps"></a>
-            <p>Link til Google Maps</p><a
-                href="https://www.google.com/maps/place/Corona+Camping/@55.4646528,11.9414871,17z/data=!4m8!3m7!1s0x46528d13459d32c5:0x31cec32da5b05016!5m2!4m1!1i2!8m2!3d55.4646997!4d11.9438074"></a>
-            </p>
-
-            Link til Google Maps
-        </div>
-
-        <div class="footer-copy">
-            <p>Copyright © 2021</p>
-        </div>
+        <section class="footer-flex">
+            <div class="wrapper-footer-kontakt">
+                <p class="footer-kontakt">Kontakt:</p>
+                <p>Coronavej 1</p>
+                <p>4140 Borup</p>
+                <p>Tlf: 2068 4070</p>
+                <p>info@coronacamping.dk</p>
+            </div>
+            
+            <div class="wrapper-footer-find">
+                <p class="footer-find">Find os her:</p>
+                <a href="https://www.google.com/maps/place/Corona+Camping/@55.4646528,11.9414871,17z/data=!4m8!3m7!1s0x46528d13459d32c5:0x31cec32da5b05016!5m2!4m1!1i2!8m2!3d55.4646997!4d11.9438074"><img src="images/map.png" alt=""></a>
+                <p>Link til Google Maps</p><a href="https://www.google.com/maps/place/Corona+Camping/@55.4646528,11.9414871,17z/data=!4m8!3m7!1s0x46528d13459d32c5:0x31cec32da5b05016!5m2!4m1!1i2!8m2!3d55.4646997!4d11.9438074"></a>
+            </div>
+        </section>
+        
+            <div class="footer-copy">
+                <p>Copyright © 2021</p>
+            </div>
+       
     </footer>
 </body>
 
