@@ -509,7 +509,7 @@ body{
     background-color: var(--baggrund);
     height: auto;
     color: var(--body);
-    padding-bottom:40px ;
+    padding-bottom:30px ;
 }
 
 .card__section {
