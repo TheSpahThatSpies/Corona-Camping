@@ -509,7 +509,6 @@ body{
     background-color: var(--baggrund);
     height: 200px;
     color: var(--body);
-    margin-top: 200px;
 }
 
 .card__section {
