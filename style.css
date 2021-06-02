@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap%');
 /* Fjerner default padding/margin og indsætter font */
 *{
     padding: 0;
@@ -47,9 +46,22 @@ body{
 }
 
 
-/* Alexander */
+/* Alexanders afsnit */
 /* Navigation og burgermenu*/
 
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    float: right;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--body);
+}
 .header {
     background-color: var(--baggrund);
     z-index: 3;
@@ -317,11 +329,9 @@ body{
 
 .prisliste__teltcamp--overskrift {
     text-align: center;
+    font-weight: 700;
 }
 
-.prisliste__teltcamp--overskrift p{
-    font-weight: 100;
-}
 
 /* prisliste knap styling */
 
@@ -499,10 +509,6 @@ body{
 
 
 
-
-
-
-
 /*Cecilies afsnit */
 /*Kontaktside*/
 
@@ -514,26 +520,24 @@ body{
     color: var(--body);
 }
 
-.ejere__img {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    z-index: -1;
-}
-
-
 .card__kontakt {
     background-color: var(--baggrund);
-    width: 85%;
-    height: 200px;
+    height: auto;
     color: var(--body);
-    margin-top: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom:30px ;
 }
 
-
-
+.card__section {
+    background-color: var(--body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    padding-bottom: 50px;
+}
+.card__container {
+    width: 85%;
+}
 
 .kontaktinformationer__liste li {
     font-family: 'Lato', sans-serif;
@@ -591,7 +595,7 @@ body{
     font-family: 'Lato', sans-serif;
     background-color: var(--kasser);
     padding: 20px;
-    width: 70%;
+    width: 82%;
     margin-top: 20px;
     margin-bottom: 30px;
 }
@@ -642,18 +646,30 @@ body{
 }
 
 .p-om-os{
-    margin: 25px;
-    margin-bottom: 40px;
+    margin: 20px;
 }
 
 .h1-om-os{
-    margin-top: 25px;
-    margin-left: 25px;
-    padding-bottom: 25px;
+    padding-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.cc__trustpilot {
+    background-color: var(--baggrund);
+    margin-top: -4px;
+}
+
+.cc__trustpilot h1 {
+    color: var(--body);
+}
+
+.trustpilot-nextprev {
+    color: var(--body);
 }
 
 .trustpilot-container {
-    max-width: 1000px;
+    width: 85%;
     position: relative;
     margin: auto;
     padding-bottom: 35px;
@@ -680,11 +696,11 @@ body{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
-
+/* Rosa/Alex */
 /* Footer styling */
 
 footer{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 footer p{
@@ -695,21 +711,14 @@ footer p{
 .footer-flex{
     display: flex;
     flex-direction: row;
-    margin: 10px;
-}
-
-.wrapper-footer-kontakt{
-    align-items: flex-start;
-    width: 50%;
-
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-between;
 }
 
 .wrapper-footer-find{
  text-align: right;
- align-items: flex-end;
- width: 50%;
-
-}
+ }
 
 .wrapper-footer-find img{
     width: 40px;
@@ -718,4 +727,202 @@ footer p{
 .footer-copy{
     text-align: center;
     margin: 25px;
+}
+
+
+/*Monicas/Alexander afsnit*/
+/*Informationer*/
+
+.faciindkob__container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.faciindkob__faciliteter--overskrift {
+    margin-top:20px ;
+}
+
+.faciindkob__liste--li {
+    font-family: 'Lato', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.faciindkob__liste {
+    margin-top: 20px;
+}
+
+.faciindkob__indkob{
+    margin-right: 20px;
+    
+}
+
+.faciindkob__indkob--overskrift {
+    margin-top: 20px;
+}
+
+.faciindkob__indkob--brodtekst {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nemlig {
+    color: var(--skrifttekst);
+    text-decoration: none;
+}
+
+.aktiviteter__container {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.aktiviteter__container--overskrift {
+    margin-top: 20px; 
+}
+
+.aktiviteter__container--brodtekst {
+    margin-top: 20px;
+}
+
+.p-køre {
+    margin-top: 20px;
+}
+
+.p-overskrift {
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+/*Alex om corna camping */
+.his__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.nat__container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Alex media queries */
+
+@media screen and (min-width: 800px) {
+    
+    /* inforamtioner sider */
+    .faciindkob__container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .faciindkob__indkob {
+        max-width: 50%;
+    }
+
+    /*om corona camping side */
+
+    .his__container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    
+    .nat__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .his__img {
+        width: 50%;
+    }
+
+    .his__img img{
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        margin-bottom: -4px;
+    }
+
+    .cc__historie {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .cc__historie h1 {
+        text-align: left;
+        margin-left: 25px;
+    }
+    .cc__nat {
+        width: 50%;
+    }
+
+    .cc__nat img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+    }
+
+    .cc__natur {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    .cc__natur h1 {
+        text-align: left;
+        margin-left: 25px;
+    }
+    
+    .trustpilot-container {
+        max-width: 50%;
+    }
+
+    /* prisliste */
+    .prisliste__container {
+        width: 50%;
+    }
+
+    .side__billede img {
+        height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .vaerdisaet__container {
+        width: 50%;
+    }
+
+    /* Kontakt os */
+
+    .card__container {
+        width: 50%;
+    }
+    
+    .kontakt__formular--container {
+        width: 48%;
+    }
+
+    .kontakt__formular--brodtekst {
+        width: 50%;
+    }
+    /* Footer */
+    
+    .footer-flex {
+        justify-content: space-evenly;
+                     
+    }
+
+    .wrapper-footer-find img {
+        width: 15%;
+    }
+
+    /* bruger menu */
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: none;
+    }
 }
