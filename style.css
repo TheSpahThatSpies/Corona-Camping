@@ -744,6 +744,7 @@ footer p{
 .faciindkob__liste--li {
     font-family: 'Lato', sans-serif;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .faciindkob__liste {
@@ -752,6 +753,7 @@ footer p{
 
 .faciindkob__indkob{
     margin-right: 20px;
+    
 }
 
 .faciindkob__indkob--overskrift {
