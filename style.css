@@ -417,16 +417,12 @@ nav a {
   .forside-hvemsektion{
       margin-top: 20px;
       display: flex;
-  }
-  
-  /* Position af h1-tekst i "Hvem er vi?" sektion. */
-  .forside-hvemervi{
       margin-left: 10px;
   }
   
   /* Position af brødtekst i "Hvem er vi?" sektion. */
   .forside-hvem-p{
-      margin-left: 7px;
+      max-width: 500px;
   }
   
   /* Styling af billede ved siden af tekst om Corona Camping. */
@@ -467,10 +463,13 @@ nav a {
       text-align: center;
       padding-bottom: 20px;
   }
+
+  .forside-radio-sektion{
+    margin-top: 10px;
+  }
     
   /* Position af h1-tekst i radio sektion. */
   .forside-viharradio{
-      margin-top: 10px;
       text-align: center;
   }
   
@@ -501,9 +500,42 @@ nav a {
       text-align: center;
   }
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: 800px) {
+    /* Desktop slideshow */
     .forside-slideshow__img{
         height: 850px;
+    }
+  
+    .forside-stibillede{
+        width: 300px;
+        margin-left: 150px;
+    }
+
+    .forside-hvem-p{
+        font-size: 20px;
+        line-height: 40px;
+        max-width: 700px;
+    }
+
+    .forside-radio-sektion{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 5%;
+        margin-top: 25px;
+    }
+
+    .forside-radio-text{
+        margin-left: 25%;
+    }
+
+    .forside-radio-p{
+        font-size: 20px;
+        line-height: 40px;
+        max-width: 700px;
+    }
+
+    .forside-viharradio{
+        margin-top: 7%;
     }
   }
 
