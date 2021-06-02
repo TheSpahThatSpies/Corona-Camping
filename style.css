@@ -385,7 +385,6 @@ nav a {
 /* Sætter baggrund og position for slideshow */
 .forside-slideshow {
     background-color: var(--baggrund);
-    max-width: 1000px;
     position: relative;
     margin: auto;
   }
@@ -398,7 +397,6 @@ nav a {
   /* Sætter størrelse på slideshow billeder */
   .forside-slideshow__img{
       width: 100%;
-      height: 3%;
   }
   
  
@@ -421,14 +419,9 @@ nav a {
       display: flex;
   }
   
-  /* Position af h1-tekst i "Hvem er vi?" sektion. */
-  .forside-hvemervi{
-      margin-left: 10px;
-  }
-  
   /* Position af brødtekst i "Hvem er vi?" sektion. */
   .forside-hvem-p{
-      margin-left: 7px;
+      max-width: 500px;
   }
   
   /* Styling af billede ved siden af tekst om Corona Camping. */
@@ -469,10 +462,13 @@ nav a {
       text-align: center;
       padding-bottom: 20px;
   }
+
+  .forside-radio-sektion{
+    margin-top: 10px;
+  }
     
   /* Position af h1-tekst i radio sektion. */
   .forside-viharradio{
-      margin-top: 10px;
       text-align: center;
   }
   
@@ -503,7 +499,43 @@ nav a {
       text-align: center;
   }
 
+  @media screen and (min-width: 800px) {
+    /* Desktop slideshow */
+    .forside-slideshow__img{
+        height: 850px;
+    }
+  
+    .forside-stibillede{
+        width: 300px;
+    }
 
+    .forside-hvem-p{
+        font-size: 20px;
+        line-height: 40px;
+        max-width: 700px;
+    }
+
+    .forside-article{
+        margin: auto;
+    }
+
+    .forside-radio-sektion{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-right: 5%;
+        margin-top: 25px;
+    }
+
+    .forside-radio-p{
+        font-size: 20px;
+        line-height: 40px;
+        max-width: 700px;
+    }
+
+    .forside-viharradio{
+        margin-top: 7%;
+    }
+  }
 
 
 
