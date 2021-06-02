@@ -375,7 +375,6 @@ body{
 /* Sætter baggrund og position for slideshow */
 .forside-slideshow {
     background-color: var(--baggrund);
-    max-width: 1000px;
     position: relative;
     margin: auto;
   }
@@ -388,7 +387,6 @@ body{
   /* Sætter størrelse på slideshow billeder */
   .forside-slideshow__img{
       width: 100%;
-      height: 3%;
   }
   
  
@@ -493,7 +491,11 @@ body{
       text-align: center;
   }
 
-
+  @media screen and (min-width: 1000px) {
+    .forside-slideshow__img{
+        height: 850px;
+    }
+  }
 
 
 
