@@ -397,7 +397,7 @@ nav a {
   /* Sætter størrelse på slideshow billeder */
   .forside-slideshow__img{
     width: 100%;
-    height: 620px;
+    height: 420px;
     object-fit: cover;
   }
   
@@ -419,6 +419,7 @@ nav a {
   .forside-hvemsektion{
       margin-top: 20px;
       display: flex;
+      margin-left: 20px;
   }
   
   /* Position af brødtekst i "Hvem er vi?" sektion. */
@@ -430,7 +431,9 @@ nav a {
   .forside-stibillede{
       margin-top: 5px;
       margin-left: 5px;
+      margin-right: 10px;
       width: 170px;
+      max-height: 300px;
   }
   
   /* Justerer position af første knap på forside */
@@ -503,9 +506,10 @@ nav a {
 
   @media screen and (min-width: 800px) {
     /* Desktop slideshow */
-  
+
     .forside-stibillede{
         width: 300px;
+        max-height: 1500px;
     }
 
     .forside-hvem-p{
