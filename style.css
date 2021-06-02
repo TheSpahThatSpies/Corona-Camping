@@ -417,7 +417,6 @@ nav a {
   .forside-hvemsektion{
       margin-top: 20px;
       display: flex;
-      margin-left: 10px;
   }
   
   /* Position af brødtekst i "Hvem er vi?" sektion. */
@@ -508,7 +507,6 @@ nav a {
   
     .forside-stibillede{
         width: 300px;
-        margin-left: 150px;
     }
 
     .forside-hvem-p{
@@ -517,15 +515,15 @@ nav a {
         max-width: 700px;
     }
 
+    .forside-article{
+        margin: auto;
+    }
+
     .forside-radio-sektion{
         display: flex;
         flex-direction: row-reverse;
         margin-right: 5%;
         margin-top: 25px;
-    }
-
-    .forside-radio-text{
-        margin-left: 25%;
     }
 
     .forside-radio-p{
