@@ -541,26 +541,34 @@ nav a {
         margin: auto;
     }
 
-    .forside-radio-sektion{
+    .forside-radio-container{
         display: flex;
         flex-direction: row-reverse;
-        justify-content: center;
-        margin-right: 5%;
-        margin-top: 25px;
+        justify-content: space-between;
+        margin-top: 40px;
+        
     }
 
     .forside-radio-img {
         width: 12%;
+        height: auto;
     }
 
     .forside-radio-p{
         font-size: 20px;
         line-height: 40px;
-        max-width: 700px;
+        max-width: 400px;
+    }
+
+
+    .forside-radio-text {
+        text-align: left;
     }
 
     .forside-viharradio{
-        margin-top: 7%;
+        text-align: left;
+        margin-left: 20px;
+        
     }
   }
 
