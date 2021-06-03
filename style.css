@@ -531,7 +531,52 @@ nav a {
       margin-bottom: 20px;
   }
 
- 
+ /*Cecilies afsnit */
+/*Kontaktside*/
+
+.titel__kontaktos{
+    background-color: var(--baggrund);
+    min-width: 100%;
+    height: 100px;
+    text-align: center;
+    color: var(--body);
+}
+
+.card__kontakt {
+    background-color: var(--baggrund);
+    height: auto;
+    color: var(--body);
+    padding-bottom:30px ;
+}
+
+.card__section {
+    background-color: var(--body);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+    padding-bottom: 50px;
+}
+.card__container {
+    width: 85%;
+}
+
+.kontaktinformationer__liste li {
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.kontaktinformationer__li {
+    padding: 4px;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 10px;
+    text-indent: 0px;
+}
+
 
 /*Kontakformular opbygget efter w3schools (se link i HTML)*/
 
@@ -974,51 +1019,6 @@ footer p{
 
 
 
-/*Cecilies afsnit */
-/*Kontaktside*/
-
-.titel__kontaktos{
-    background-color: var(--baggrund);
-    min-width: 100%;
-    height: 100px;
-    text-align: center;
-    color: var(--body);
-}
-
-.card__kontakt {
-    background-color: var(--baggrund);
-    height: auto;
-    color: var(--body);
-    padding-bottom:30px ;
-}
-
-.card__section {
-    background-color: var(--body);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: -50px;
-    padding-bottom: 50px;
-}
-.card__container {
-    width: 85%;
-}
-
-.kontaktinformationer__liste li {
-    font-family: 'Lato', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    margin-left: 10px;
-}
-
-.kontaktinformationer__li {
-    padding: 4px;
-    font-family: 'Lato', sans-serif;
-    list-style: none;
-    text-decoration: none;
-    margin-left: 10px;
-    text-indent: 0px;
-}
 
 
 @media screen and (max-width: 800px) {
