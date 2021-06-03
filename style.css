@@ -257,17 +257,19 @@ nav a {
     padding-bottom: 20px;
 }
 
-.Burger-logo {
+.burgerlogo {
     background-color: var(--baggrund);
 }
 
-.Burger-logo img {
+.burgerlogo img {
     width: 200px;
     height: auto;
     margin-top: 30px;
+    padding-left: 20px;
+
 }
 
-.Burger-logo {
+.burgerlogo {
     text-align: center;
 }
 
