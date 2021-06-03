@@ -85,7 +85,7 @@ nav a {
 .header ul a {
     display: block;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-left: 60px;
     text-decoration: none;
     font-size: 20px;
     background: var(--baggrund);
@@ -192,7 +192,7 @@ nav a {
 .menu__content--brodtekst {
     display: block;
     padding-top: 5px;
-    padding-left: 60px;
+    padding-left: 80px;
     text-decoration: none;
     font-size: 14px;
     font-family: 'Lato', sans-serif; ;
@@ -200,6 +200,7 @@ nav a {
     color: var(--body);
     margin-bottom: -5px;
 }
+
 
 /* X-transition - luk-effekt på burgermenu */
 
@@ -419,6 +420,7 @@ nav a {
       display: flex;
       justify-content: space-evenly;
       padding-bottom: 20px;
+      margin-top: -1px;
   }
     
   /* Størrelse af ikoner */
@@ -474,6 +476,7 @@ nav a {
       padding-top: 10px;
       padding-bottom: 20px;
       text-align: center;
+      margin-top: -1px;
   }
   
 
@@ -524,6 +527,7 @@ nav a {
   .forside-booking-knap{
       background-color: var(--baggrund);
       text-align: center;
+      margin-top: -1px;
   }
 
   .forside-hvemervi {
