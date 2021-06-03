@@ -6,7 +6,11 @@
     margin: 0;
     font-family: 'Ultra', serif;
 }
-  
+
+li {
+    text-indent: -22px;
+}
+
 h1 {
     font-size: 22px;
     letter-spacing: 1.5px;
@@ -25,8 +29,8 @@ button {
     border: none;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
-    width: 8em;
-    height: 2em;
+    width: 60%;
+    height: 3em;
     color: var(--body);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -288,11 +292,20 @@ nav a {
 }
 .prisliste__container {
     background-color: #FCFCFC ;
-    width: 85%;
+    width: 97%;
 }
 
 .prisliste__container--overskrift {
     margin-bottom: 12px;
+    margin-top: 40px;
+    margin-bottom: 0px; /**/
+    margin-bottom: 40px;
+
+}
+
+.prisliste__container--overskrift p{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .prisliste__teltcamp--priser--container {
@@ -305,11 +318,12 @@ nav a {
 }
 
 .prisliste__teltcamp--content {
-    text-align:left ;
+    margin-bottom: 40px;
 }
 
 .prisliste__teltcamp--content p {
     margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 .prisliste__teltcamp--pris p{
@@ -318,6 +332,7 @@ nav a {
 
 .prisliste__teltcamp--pris {
     text-align: right;
+    margin-right: 20px;
 }
 
 .menu__content--skrift {
@@ -330,7 +345,7 @@ nav a {
 
 .prisliste__teltcamp--overskrift {
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 
@@ -338,8 +353,8 @@ nav a {
 
 .prisliste__button {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
+    margin-bottom: 40px;
 }
 
 /* styling af sektion værdisæt */
@@ -361,22 +376,17 @@ nav a {
 
 .vaerdisaet__button {
     text-align: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 40px;
 }
 .vaerdisaet__container{
-    width: 85%;
+    margin: 40px;   
 }
 .vaerdisaet__overskrift {
     margin-bottom: 20px;
-    margin-top: 20px;
 }
 .Vaerdisaet__brodtekst {
     margin-bottom: 20px;
 }
-
-
-
 
 
 
@@ -398,7 +408,7 @@ nav a {
   /* Sætter størrelse på slideshow billeder */
   .forside-slideshow__img{
     width: 100%;
-    height: 420px;
+    height: 385px;
     object-fit: cover;
   }
   
@@ -586,6 +596,7 @@ nav a {
     list-style: none;
     text-decoration: none;
     margin-left: 10px;
+    text-indent: 0px;
 }
 
 
@@ -680,18 +691,21 @@ nav a {
 }
 
 .p-om-os{
-    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .h1-om-os{
-    padding-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .cc__trustpilot {
     background-color: var(--baggrund);
     margin-top: -4px;
+    padding-bottom: 40px;
 }
 
 .cc__trustpilot h1 {
@@ -770,21 +784,29 @@ footer p{
 .faciindkob__container {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .faciindkob__faciliteter--overskrift {
-    margin-top:20px ;
+    margin-top:40px ;
+    text-align: center;
 }
 
 .faciindkob__liste--li {
     font-family: 'Lato', sans-serif;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .faciindkob__liste {
     margin-top: 20px;
+}
+
+.faciindkob__liste {
+    list-style-position: outside;
+    
 }
 
 .faciindkob__indkob{
@@ -793,7 +815,8 @@ footer p{
 }
 
 .faciindkob__indkob--overskrift {
-    margin-top: 20px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .faciindkob__indkob--brodtekst {
@@ -838,6 +861,7 @@ footer p{
     display: flex;
     flex-direction: column;
 }
+
 
 /* Alex media queries */
 
@@ -953,10 +977,16 @@ footer p{
     .menu-icon {
         display: none;
     }
+
+    /*button */
+    button {
+        width: 10em;
+    }
 }
 
 @media screen and (max-width: 800px) {
     nav {
         display: none;
     }
+
 }
