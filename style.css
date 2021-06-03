@@ -6,7 +6,11 @@
     margin: 0;
     font-family: 'Ultra', serif;
 }
-  
+
+li {
+    text-indent: -22px;
+}
+
 h1 {
     font-size: 22px;
     letter-spacing: 1.5px;
@@ -17,6 +21,7 @@ h1 {
 p{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
+    font-weight: 300;
 }
 
 button {
@@ -24,8 +29,8 @@ button {
     border: none;
     border-radius: 5px;
     font-family: 'Lato', sans-serif;
-    width: 8em;
-    height: 2em;
+    width: 60%;
+    height: 3em;
     color: var(--body);
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -66,7 +71,7 @@ nav a {
     background-color: var(--baggrund);
     z-index: 3;
     width: 100%;
-    height: 60px;
+    height: 65px;
     position: relative
 }
 
@@ -175,7 +180,6 @@ nav a {
     }
 
 .menu__content--streg {
-    
     width: 20%;
     height: 2px;
     background-color: var(--body);
@@ -236,7 +240,7 @@ nav a {
 }
 
 .nav-linje {
-    width: 20%;
+    width: 16%;
     height: 2px;
     background-color: var(--body);
     border-style: none;
@@ -287,11 +291,20 @@ nav a {
 }
 .prisliste__container {
     background-color: #FCFCFC ;
-    width: 85%;
+    width: 97%;
 }
 
 .prisliste__container--overskrift {
     margin-bottom: 12px;
+    margin-top: 40px;
+    margin-bottom: 0px; /**/
+    margin-bottom: 40px;
+
+}
+
+.prisliste__container--overskrift p{
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .prisliste__teltcamp--priser--container {
@@ -304,11 +317,12 @@ nav a {
 }
 
 .prisliste__teltcamp--content {
-    text-align:left ;
+    margin-bottom: 40px;
 }
 
 .prisliste__teltcamp--content p {
     margin-bottom: 5px;
+    margin-left: 20px;
 }
 
 .prisliste__teltcamp--pris p{
@@ -317,6 +331,7 @@ nav a {
 
 .prisliste__teltcamp--pris {
     text-align: right;
+    margin-right: 20px;
 }
 
 .menu__content--skrift {
@@ -329,7 +344,7 @@ nav a {
 
 .prisliste__teltcamp--overskrift {
     text-align: center;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 
@@ -337,8 +352,8 @@ nav a {
 
 .prisliste__button {
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    
+    margin-bottom: 40px;
 }
 
 /* styling af sektion værdisæt */
@@ -360,22 +375,17 @@ nav a {
 
 .vaerdisaet__button {
     text-align: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
+    margin-top: 40px;
 }
 .vaerdisaet__container{
-    width: 85%;
+    margin: 40px;   
 }
 .vaerdisaet__overskrift {
     margin-bottom: 20px;
-    margin-top: 20px;
 }
 .Vaerdisaet__brodtekst {
     margin-bottom: 20px;
 }
-
-
-
 
 
 
@@ -397,7 +407,7 @@ nav a {
   /* Sætter størrelse på slideshow billeder */
   .forside-slideshow__img{
     width: 100%;
-    height: 420px;
+    height: 385px;
     object-fit: cover;
   }
   
@@ -417,9 +427,13 @@ nav a {
   
   /* Position + indsætning af flex på sektion om "Hvem er vi?" */
   .forside-hvemsektion{
-      margin-top: 20px;
+      margin-top: 40px;
       display: flex;
-      margin-left: 20px;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 40px;
+      margin-left: 40px;
+      align-items: center;
   }
   
   /* Position af brødtekst i "Hvem er vi?" sektion. */
@@ -429,13 +443,14 @@ nav a {
   
   /* Styling af billede ved siden af tekst om Corona Camping. */
   .forside-stibillede{
-      margin-top: 5px;
-      margin-left: 5px;
-      margin-right: 10px;
-      width: 170px;
-      max-height: 300px;
+      margin-top: 40px;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: bottom;
   }
   
+
   /* Justerer position af første knap på forside */
   .forside-knap-read{
       margin-top: 20px;
@@ -469,8 +484,11 @@ nav a {
   }
 
   .forside-radio-sektion{
-    margin-top: 10px;
-  }
+      text-align: center;
+    margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+  } 
     
   /* Position af h1-tekst i radio sektion. */
   .forside-viharradio{
@@ -479,20 +497,21 @@ nav a {
   
   /* Position af brødtekst om radio. */
   .forside-radio-p{
+      text-align: left;
       margin-left: 15px;
       padding-bottom: 15px;
   }
   
   /* Position af radio logo. */
   .forside-radio-img{
-      margin-left: 3%;
-      width: 350px;
+      width: 90%
   }
-  
+
+
   /* Justerer position af anden knap på forside */
   .forside-knap{
-      margin-top: 20px;
-      margin-bottom: 30px;
+      margin-top: 40px;
+      margin-bottom: 40px;
   }
 
   .forside-knap__container{
@@ -525,8 +544,13 @@ nav a {
     .forside-radio-sektion{
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
         margin-right: 5%;
         margin-top: 25px;
+    }
+
+    .forside-radio-img {
+        width: 12%;
     }
 
     .forside-radio-p{
@@ -585,6 +609,7 @@ nav a {
     list-style: none;
     text-decoration: none;
     margin-left: 10px;
+    text-indent: 0px;
 }
 
 
@@ -679,18 +704,21 @@ nav a {
 }
 
 .p-om-os{
-    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .h1-om-os{
-    padding-top: 25px;
-    margin-bottom: 25px;
+    padding-top: 40px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
 .cc__trustpilot {
     background-color: var(--baggrund);
     margin-top: -4px;
+    padding-bottom: 40px;
 }
 
 .cc__trustpilot h1 {
@@ -769,21 +797,29 @@ footer p{
 .faciindkob__container {
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .faciindkob__faciliteter--overskrift {
-    margin-top:20px ;
+    margin-top:40px ;
+    text-align: center;
 }
 
 .faciindkob__liste--li {
     font-family: 'Lato', sans-serif;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 .faciindkob__liste {
     margin-top: 20px;
+}
+
+.faciindkob__liste {
+    list-style-position: outside;
+    
 }
 
 .faciindkob__indkob{
@@ -792,12 +828,13 @@ footer p{
 }
 
 .faciindkob__indkob--overskrift {
-    margin-top: 20px;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .faciindkob__indkob--brodtekst {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .nemlig {
@@ -806,12 +843,14 @@ footer p{
 }
 
 .aktiviteter__container {
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 .aktiviteter__container--overskrift {
-    margin-top: 20px; 
+    margin-top: 40px;
+    text-align: center; 
 }
 
 .aktiviteter__container--brodtekst {
@@ -824,7 +863,7 @@ footer p{
 
 .p-overskrift {
     margin-top: 20px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 /*Alex om corna camping */
@@ -837,6 +876,7 @@ footer p{
     display: flex;
     flex-direction: column;
 }
+
 
 /* Alex media queries */
 
@@ -952,10 +992,16 @@ footer p{
     .menu-icon {
         display: none;
     }
+
+    /*button */
+    button {
+        width: 10em;
+    }
 }
 
 @media screen and (max-width: 800px) {
     nav {
         display: none;
     }
+
 }
